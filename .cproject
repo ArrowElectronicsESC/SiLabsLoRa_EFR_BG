@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904" moduleId="org.eclipse.cdt.core.settings" name="GNU ARM v7.2.1 - Default">
+				<macros>
+					<stringMacro name="StudioSdkPath" type="VALUE_PATH_DIR" value="${StudioSdkPathFromID:com.silabs.sdk.stack.super:2.6.0._310455070}"/>
+					<stringMacro name="StudioToolchainPath" type="VALUE_PATH_DIR" value="${StudioToolchainPathFromID:com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="com.silabs.ss.framework.debugger.core.HEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ss.framework.debugger.core.EBL" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ss.framework.debugger.core.GBL" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ss.framework.debugger.core.BIN" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.silabs.ss.framework.debugger.core.S37" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule buildConfig.needsApplyStock="true" buildConfig.stockConfigId="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904" cppBuildConfig.cppBuiltInState="[{&quot;builtinMacrosMap&quot;:{&quot;EFR32BG12P332F1024GL125&quot;:&quot;1&quot;},&quot;builtinLibraryPathsStr&quot;:&quot;&quot;,&quot;builtinLibraryFilesStr&quot;:&quot;&quot;,&quot;builtinLibraryNames&quot;:[&quot;m&quot;],&quot;builtinLibraryObjectsStr&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;builtinIncludesStr&quot;:&quot;&quot;,&quot;resolvedOptionsStr&quot;:&quot;[{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.floatingpoint.type\&quot;,\&quot;value\&quot;:\&quot;floatingpoint.type.softfp\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect\&quot;,\&quot;value\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect.c99\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.clibs\&quot;,\&quot;value\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nanospec\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.circulardependency\&quot;,\&quot;value\&quot;:\&quot;true\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.flags\&quot;,\&quot;value\&quot;:\&quot;-c -x assembler-with-cpp -mfpu=fpv4-sp-d16 -mfloat-abi=softfp\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.floatingpoint.type\&quot;,\&quot;value\&quot;:\&quot;floatingpoint.type.softfp\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.usescript\&quot;,\&quot;value\&quot;:\&quot;true\&quot;,\&quot;listValuesMap\&quot;:{}},{\&quot;toolId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base\&quot;,\&quot;listValues\&quot;:[],\&quot;builtin\&quot;:true,\&quot;optionId\&quot;:\&quot;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nostdlibs\&quot;,\&quot;value\&quot;:\&quot;false\&quot;,\&quot;listValuesMap\&quot;:{}}]&quot;}]" moduleId="com.silabs.ss.framework.ide.project.core.cpp" projectCommon.boardIds="brd4103a:0.0.0.A01" projectCommon.partId="mcu.arm.efr32.bg12.efr32bg12p332f1024gl125" projectCommon.referencedModules="[{&quot;removed&quot;:false,&quot;builtinExcludes&quot;:[],&quot;builtinSources&quot;:[],&quot;builtin&quot;:true,&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/ss/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.module.template.external.com.silabs.sdk.stack.super.ble.Bluetooth SDK.efr32-base\&quot;&gt;\r\n  &lt;inclusions pattern=\&quot;.*\&quot;/&gt;\r\n&lt;/project:MModule&gt;&quot;}]" projectCommon.savedStockVariables="{&quot;pathVar_RUNTEST&quot;:&quot;$(sdkInstallationPath)\\tool\\runtest&quot;,&quot;pathVar_BEANSHELL&quot;:&quot;$(sdkInstallationPath)\\tool\\beanshell&quot;,&quot;pathVar_HARDWARE_MODULE&quot;:&quot;$(sdkInstallationPath)\\hardware\\module&quot;,&quot;pathVar_APP_INTERNAL&quot;:&quot;$(sdkInstallationPath)\\app\\internal&quot;,&quot;pathVar_CMSIS&quot;:&quot;$(sdkInstallationPath)\\platform\\CMSIS&quot;,&quot;pathVar_SEGGER&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\segger&quot;,&quot;pathVar_RAIL_LIB&quot;:&quot;$(sdkInstallationPath)\\platform\\radio\\rail_lib&quot;,&quot;pathVar_CSLIB_SRC&quot;:&quot;$(sdkInstallationPath)\\platform\\middleware\\cslib_src&quot;,&quot;pathVar_DEVICE&quot;:&quot;$(sdkInstallationPath)\\platform\\Device&quot;,&quot;pathVar_TIMAC&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\timac&quot;,&quot;pathVar_BLUETOOTH_PROTOCOL&quot;:&quot;$(sdkInstallationPath)\\protocol\\bluetooth&quot;,&quot;pathVar_ESF_COMMON&quot;:&quot;$(sdkInstallationPath)\\app\\esf_common&quot;,&quot;pathVar_MICRIUM_OS&quot;:&quot;$(sdkInstallationPath)\\platform\\micrium_os&quot;,&quot;pathVar_BASE&quot;:&quot;$(sdkInstallationPath)\\platform\\base&quot;,&quot;pathVar_KIT&quot;:&quot;$(sdkInstallationPath)\\hardware\\kit&quot;,&quot;pathVar_HALCONFIG&quot;:&quot;$(sdkInstallationPath)\\platform\\halconfig&quot;,&quot;pathVar_ZIGBEE&quot;:&quot;$(sdkInstallationPath)\\protocol\\zigbee&quot;,&quot;pathVar_GLIB&quot;:&quot;$(sdkInstallationPath)\\platform\\middleware\\glib&quot;,&quot;pathVar_MICRIUM_OS_EXAMPLE&quot;:&quot;$(sdkInstallationPath)\\app\\micrium_os_example&quot;,&quot;pathVar_USBXPRESS&quot;:&quot;$(sdkInstallationPath)\\platform\\middleware\\usbxpress&quot;,&quot;pathVar_PRODUCTION_BOOTLOADER&quot;:&quot;$(sdkInstallationPath)\\platform\\production_bootloader&quot;,&quot;pathVar_TCMGR&quot;:&quot;$(sdkInstallationPath)\\tool\\tcmgr&quot;,&quot;pathVar_MICRIUM_COMPONENTS&quot;:&quot;$(sdkInstallationPath)&quot;,&quot;pathVar_EMWIN&quot;:&quot;$(sdkInstallationPath)\\util\\third_party&quot;,&quot;pathVar_CJSON&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\cjson&quot;,&quot;pathVar_USB_GECKO&quot;:&quot;$(sdkInstallationPath)\\platform\\middleware\\usb_gecko&quot;,&quot;pathVar_SCRIPT&quot;:&quot;$(sdkInstallationPath)\\tool\\script&quot;,&quot;pathVar_RADIO_CONFIGURATOR&quot;:&quot;$(sdkInstallationPath)\\platform\\tool\\efr32_radio_configurator&quot;,&quot;pathVar_STUDIO&quot;:&quot;$(sdkInstallationPath)\\.studio&quot;,&quot;pathVar_APPLE_HOMEKIT&quot;:&quot;$(sdkInstallationPath)\\app\\apple_homekit&quot;,&quot;pathVar_MCU_EXAMPLE&quot;:&quot;$(sdkInstallationPath)\\app\\mcu_example&quot;,&quot;pathVar_CUSTOMER_BOARD&quot;:&quot;$(sdkInstallationPath)\\hardware\\customer_board&quot;,&quot;pathVar_UNITY&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\unity&quot;,&quot;pathVar_EXPERIMENTAL&quot;:&quot;$(sdkInstallationPath)\\app\\experimental&quot;,&quot;pathVar_REFERENCE_DESIGN&quot;:&quot;$(sdkInstallationPath)\\hardware\\reference_design&quot;,&quot;pathVar_VSRPC-LIB&quot;:&quot;$(sdkInstallationPath)\\tool\\vsrpc-lib&quot;,&quot;pathVar_FATFS&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\fatfs&quot;,&quot;pathVar_SENSOR_SI114XHRM&quot;:&quot;$(sdkInstallationPath)\\util\\silicon_labs\\sensor_si114xhrm&quot;,&quot;pathVar_IEC60335_CLASSB&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\iec60335_classb&quot;,&quot;pathVar_SCRIPTED_TEST_FRAMEWORK&quot;:&quot;$(sdkInstallationPath)\\tool\\scripted_test_framework&quot;,&quot;pathVar_EMTOOL&quot;:&quot;$(sdkInstallationPath)\\tool\\emtool&quot;,&quot;pathVar_BLUETOOTH_APP&quot;:&quot;$(sdkInstallationPath)\\app\\bluetooth&quot;,&quot;pathVar_JAM&quot;:&quot;$(sdkInstallationPath)\\tool\\jam&quot;,&quot;pathVar_EMDRV&quot;:&quot;$(sdkInstallationPath)\\platform\\emdrv&quot;,&quot;pathVar_SILABS_CORE&quot;:&quot;$(sdkInstallationPath)\\util\\silicon_labs\\silabs_core&quot;,&quot;pathVar_CSLIB&quot;:&quot;$(sdkInstallationPath)\\platform\\middleware\\cslib&quot;,&quot;pathVar_APACHE_COMMONS&quot;:&quot;$(sdkInstallationPath)\\tool\\apache_commons&quot;,&quot;pathVar_MULTIPHY_RADIO_CONFIGURATOR&quot;:&quot;$(sdkInstallationPath)\\platform\\tool\\efr32_multi_phy_radio_configurator&quot;,&quot;pathVar_JENKINS&quot;:&quot;$(sdkInstallationPath)\\tool\\jenkins&quot;,&quot;pathVar_MBEDTLS&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\mbedtls&quot;,&quot;pathVar_BOOTLOADER&quot;:&quot;$(sdkInstallationPath)\\platform\\bootloader&quot;,&quot;pathVar_ZCL&quot;:&quot;$(sdkInstallationPath)\\app\\zcl&quot;,&quot;pathVar_FLEX&quot;:&quot;$(sdkInstallationPath)\\protocol\\flex&quot;,&quot;pathVar_DIGI_LTE&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\digi_lte&quot;,&quot;pathVar_PLUGIN&quot;:&quot;$(sdkInstallationPath)\\util\\plugin&quot;,&quot;pathVar_FREERTOS&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\freertos&quot;,&quot;pathVar_LWIP&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\lwip&quot;,&quot;pathVar_LIBCOAP&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\libcoap&quot;,&quot;pathVar_PAHOMQTT&quot;:&quot;$(sdkInstallationPath)\\util\\third_party\\paho.mqtt.c&quot;,&quot;pathVar_IDE_SUPPORT&quot;:&quot;$(sdkInstallationPath)\\tool\\ide_support&quot;,&quot;pathVar_CODE_GENERATOR&quot;:&quot;$(sdkInstallationPath)\\tool\\code_generator&quot;,&quot;pathVar_EMLIB&quot;:&quot;$(sdkInstallationPath)\\platform\\emlib&quot;,&quot;pathVar_THREAD&quot;:&quot;$(sdkInstallationPath)\\protocol\\thread&quot;,&quot;pathVar_HWCONFDATA&quot;:&quot;$(sdkInstallationPath)\\platform\\hwconf_data&quot;}" projectCommon.sdkId="com.silabs.sdk.stack.super:2.6.0._310455070" projectCommon.toolchainId="com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904" projectCommon.userSettings="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;project propertyScope=&quot;project&quot;/&gt;&#13;&#10;"/>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904" name="GNU ARM v7.2.1 - Default" parent="com.silabs.ide.si32.gcc.cdt.managedbuild.config.gnu.exe" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe.1673707802" name="Si32 GNU ARM" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe">
+							<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.script.1871133606" name="Linker Script:" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.script" value="${workspace_loc:/${ProjName}/efr32bg12p332f1024gl125.ld}" valueType="string"/>
+							<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.408092544" name="Debug Level" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level" value="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.debug.level.max" valueType="enumerated"/>
+							<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.usescript.502537536" name="Use custom linker script" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.usescript" value="true" valueType="boolean"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF;com.silabs.ss.framework.debugger.core.BIN;com.silabs.ss.framework.debugger.core.HEX;com.silabs.ss.framework.debugger.core.S37;com.silabs.ss.framework.debugger.core.EBL;com.silabs.ss.framework.debugger.core.GBL" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base.1340298712" isAbstract="false" name="Debug Platform" osList="win32,linux,macosx" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/soc-thermometer-rtos}/GNU ARM v7.2.1 - Default" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base.1225795673" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Si32 GNU ARM Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.target.gnu.builder.base"/>
+							<tool command="arm-none-eabi-gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1141764417" name="GNU ARM C Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect.1205469054" name="C Language Dialect" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.floatingpoint.type.883067748" name="Floating-Point ABI" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.floatingpoint.type" value="floatingpoint.type.softfp" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1521196864" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external_copied_files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1/arm-none-eabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/cfg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/lorawan/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/bsp/siliconlabs/generic/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/EFR32BG12_BRD4103A/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/Device/SiliconLabs/EFR32BG12P/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ezradiodrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/gpiointerrupt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/sleep/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/CMSIS/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/halconfig}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/bluetooth/common/util}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/EFR32BG12_BRD4103A/config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/collections}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/kal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ieee802154}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/halconfig/inc/hal-config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/uartdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/gpiointerrupt/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/gnu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/preprocessor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/bootloader/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/platform_mgr}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/chip/efr32/efr32xg1x}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ble}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/generic}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source/GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/tempdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/ring_buf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/src/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics}&quot;"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols.1334326002" name="Defined symbols (-D)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG=1"/>
+									<listOptionValue builtIn="false" value="DEBUG_EFM=1"/>
+									<listOptionValue builtIn="false" value="RETARGET_LEUART0=1"/>
+									<listOptionValue builtIn="false" value="EFR32BG12P332F1024GL125=1"/>
+									<listOptionValue builtIn="false" value="RETARGET_VCOM=1"/>
+									<listOptionValue builtIn="false" value="__STACK_SIZE=0x800"/>
+									<listOptionValue builtIn="false" value="HAL_CONFIG=1"/>
+									<listOptionValue builtIn="false" value="__StackLimit=0x20000000"/>
+									<listOptionValue builtIn="false" value="__HEAP_SIZE=0xD00"/>
+									<listOptionValue builtIn="false" value="DEBUG_EFR=1"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.files.488612264" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mbed_config.h}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mbed_lora_config.h}&quot;"/>
+								</option>
+								<inputType id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1695470826" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base.719490493" name="GNU ARM C++ Compiler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.371933695" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external_copied_files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1/arm-none-eabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/cfg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/lorawan/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/EFR32BG12_BRD4103A/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/Device/SiliconLabs/EFR32BG12P/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/bsp/siliconlabs/generic/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ezradiodrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/gpiointerrupt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/sleep/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/CMSIS/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/halconfig}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/bluetooth/common/util}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/EFR32BG12_BRD4103A/config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/collections}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/kal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ieee802154}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/halconfig/inc/hal-config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/uartdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/gpiointerrupt/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/gnu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/preprocessor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/bootloader/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/platform_mgr}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/chip/efr32/efr32xg1x}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ble}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/generic}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source/GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/tempdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/ring_buf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/src/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lcd-graphics}&quot;"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.def.symbols.1654215325" name="Defined symbols (-D)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG=1"/>
+									<listOptionValue builtIn="false" value="DEBUG_EFM=1"/>
+									<listOptionValue builtIn="false" value="RETARGET_LEUART0=1"/>
+									<listOptionValue builtIn="false" value="EFR32BG12P332F1024GL125=1"/>
+									<listOptionValue builtIn="false" value="RETARGET_VCOM=1"/>
+									<listOptionValue builtIn="false" value="__STACK_SIZE=0x800"/>
+									<listOptionValue builtIn="false" value="HAL_CONFIG=1"/>
+									<listOptionValue builtIn="false" value="__StackLimit=0x20000000"/>
+									<listOptionValue builtIn="false" value="__HEAP_SIZE=0xD00"/>
+									<listOptionValue builtIn="false" value="DEBUG_EFR=1"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.files.26758067" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mbed_config.h}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mbed_lora_config.h}&quot;"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.misc.dialect.1517739148" name="C++ Language Dialect" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.misc.dialect" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.misc.dialect.gnucpp0x" valueType="enumerated"/>
+								<inputType id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.input.1510799698" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool command="arm-none-eabi-gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GASErrorParser" id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base.414627844" name="GNU ARM Assembler" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.flags.488171939" name="Assembler flags" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.flags" value="-c -x assembler-with-cpp -mfpu=fpv4-sp-d16 -mfloat-abi=softfp" valueType="string"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.includes.417694939" name="Include paths (-I)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external_copied_files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioToolchainPath}/arm-none-eabi/include/c++/7.2.1/arm-none-eabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/cfg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbedtls}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/EFR32BG12_BRD4103A/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/Device/SiliconLabs/EFR32BG12P/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/micrium_os/bsp/siliconlabs/generic/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ezradiodrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/hardware/kit/common/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/dmadrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/gpiointerrupt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/nvm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/rtcdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/sleep/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/spidrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/uartdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/ustimer/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/platform/emdrv/tempdrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emlib/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/CMSIS/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/halconfig}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/bluetooth/common/util}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/EFR32BG12_BRD4103A/config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/collections}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/hardware/kit/common/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/kal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ieee802154}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/halconfig/inc/hal-config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/uartdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/inc/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/gpiointerrupt/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/gnu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/bsp/siliconlabs/generic/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/preprocessor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/bootloader/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/rtcdrv/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/kernel/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/sleep/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/cpu/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/platform_mgr}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/chip/efr32/efr32xg1x}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/radio/rail_lib/protocol/ble}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/ports/source/generic}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/Device/SiliconLabs/EFR32BG12P/Source/GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/emdrv/tempdrv/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os/common/source/ring_buf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/protocol/bluetooth/ble_stack/src/soc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/micrium_os}&quot;"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.as.def.symbols.1790898815" name="Defined symbols (-D)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.as.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="RETARGET_LEUART0=1"/>
+									<listOptionValue builtIn="false" value="EFR32BG12P332F1024GL125=1"/>
+									<listOptionValue builtIn="false" value="__STACK_SIZE=0x800"/>
+									<listOptionValue builtIn="false" value="HAL_CONFIG=1"/>
+									<listOptionValue builtIn="false" value="__StackLimit=0x20000000"/>
+									<listOptionValue builtIn="false" value="__HEAP_SIZE=0xD00"/>
+									<listOptionValue builtIn="false" value="DEBUG_EFR=1"/>
+								</option>
+								<inputType id="org.eclipse.cdt.core.asmSource.223585833" superClass="org.eclipse.cdt.core.asmSource"/>
+							</tool>
+							<tool command="arm-none-eabi-gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base.1008536003" name="GNU ARM C Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base">
+								<option id="gnu.c.link.option.userobjs.2062758754" name="Other objects" superClass="gnu.c.link.option.userobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg12_gcc_release.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/binapploader.o}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libpsstore.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libmbedtls.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libbluetooth.a}"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.floatingpoint.type.662003621" name="Floating-Point ABI" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.floatingpoint.type" value="floatingpoint.type.softfp" valueType="enumerated"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.circulardependency.1797228144" name="Use library file circular dependency" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.circulardependency" value="true" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nostdlibs.822310403" name="No startup or default libs (-nostdlib)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nostdlibs" value="false" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.clibs.1868699464" name="C Library" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.clibs" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nanospec" valueType="enumerated"/>
+								<option id="gnu.c.link.option.libs.1881420790" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="m"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.368119127" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="arm-none-eabi-g++" id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base.1456227370" name="GNU ARM C++ Linker" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.userobjs.1851070942" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libbluetooth.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libpsstore.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libmbedtls.a}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/binapploader.o}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg12_gcc_release.a}"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.842443829" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="m"/>
+								</option>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.nosys.1026922481" name="Do not link default system funtions (--specs=nosys.specs)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.nosys" value="false" valueType="boolean"/>
+								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.category.ordering.selection.1656764636" name="Linker input ordering" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.category.ordering.selection" value="./src/ble/app.o;./src/ble/app_master.o;./src/ble/app_slave.o;./src/ble/app_utils.o;./src/pg_retargetswo.o;./protocol/bluetooth/ble_stack/src/soc/rtos_bluetooth.o;./platform/micrium_os/ports/source/gnu/armv7m_cpu_a.o;./platform/micrium_os/ports/source/gnu/armv7m_cpu_c.o;./platform/micrium_os/ports/source/gnu/armv7m_os_cpu_a.o;./platform/micrium_os/ports/source/gnu/armv7m_os_cpu_c.o;./platform/micrium_os/ports/source/generic/armv6m_v7m_cpu_int.o;./platform/micrium_os/kernel/source/os_cfg_app.o;./platform/micrium_os/kernel/source/os_core.o;./platform/micrium_os/kernel/source/os_dbg.o;./platform/micrium_os/kernel/source/os_flag.o;./platform/micrium_os/kernel/source/os_mem.o;./platform/micrium_os/kernel/source/os_mon.o;./platform/micrium_os/kernel/source/os_msg.o;./platform/micrium_os/kernel/source/os_mutex.o;./platform/micrium_os/kernel/source/os_prio.o;./platform/micrium_os/kernel/source/os_q.o;./platform/micrium_os/kernel/source/os_sem.o;./platform/micrium_os/kernel/source/os_stat.o;./platform/micrium_os/kernel/source/os_task.o;./platform/micrium_os/kernel/source/os_tick.o;./platform/micrium_os/kernel/source/os_time.o;./platform/micrium_os/kernel/source/os_tmr.o;./platform/micrium_os/kernel/source/os_var.o;./platform/micrium_os/cpu/source/cpu_core.o;./platform/micrium_os/common/source/rtos/rtos_err_str.o;./platform/micrium_os/common/source/platform_mgr/platform_mgr.o;./platform/micrium_os/common/source/lib/lib_ascii.o;./platform/micrium_os/common/source/lib/lib_math.o;./platform/micrium_os/common/source/lib/lib_mem.o;./platform/micrium_os/common/source/lib/lib_str.o;./platform/micrium_os/common/source/kal/kal_kernel.o;./platform/micrium_os/common/source/common/common.o;./platform/micrium_os/common/source/collections/bitmap.o;./platform/micrium_os/common/source/collections/map.o;./platform/micrium_os/common/source/collections/slist.o;./platform/micrium_os/bsp/siliconlabs/generic/source/bsp_cpu.o;./platform/micrium_os/bsp/siliconlabs/generic/source/bsp_os.o;./platform/micrium_os/bsp/siliconlabs/generic/source/bsp_tick_rtcc.o;./platform/micrium_os/bsp/siliconlabs/generic/source/bsp_trace.o;./platform/emlib/src/em_assert.o;./platform/emlib/src/em_burtc.o;./platform/emlib/src/em_cmu.o;./platform/emlib/src/em_core.o;./platform/emlib/src/em_cryotimer.o;./platform/emlib/src/em_crypto.o;./platform/emlib/src/em_emu.o;./platform/emlib/src/em_eusart.o;./platform/emlib/src/em_gpio.o;./platform/emlib/src/em_i2c.o;./platform/emlib/src/em_msc.o;./platform/emlib/src/em_rmu.o;./platform/emlib/src/em_rtcc.o;./platform/emlib/src/em_se.o;./platform/emlib/src/em_system.o;./platform/emlib/src/em_timer.o;./platform/emlib/src/em_usart.o;./platform/emdrv/sleep/src/sleep.o;./platform/emdrv/rtcdrv/src/rtcdriver.o;./platform/Device/SiliconLabs/EFR32BG12P/Source/GCC/startup_efr32bg12p.o;./platform/Device/SiliconLabs/EFR32BG12P/Source/system_efr32bg12p.o;./platform/SPI.o;./platform/mbed_critical.o;./mbedtls/targets/TARGET_Silicon_Labs/aes_aes.o;./mbedtls/targets/TARGET_Silicon_Labs/crypto_aes.o;./mbedtls/targets/TARGET_Silicon_Labs/crypto_ecp.o;./mbedtls/targets/TARGET_Silicon_Labs/crypto_management.o;./mbedtls/targets/TARGET_Silicon_Labs/crypto_sha.o;./mbedtls/targets/hash_wrappers.o;./mbedtls/src/certs.o;./mbedtls/src/debug.o;./mbedtls/src/error.o;./mbedtls/src/net_sockets.o;./mbedtls/src/pkcs11.o;./mbedtls/src/ssl_cache.o;./mbedtls/src/ssl_ciphersuites.o;./mbedtls/src/ssl_cli.o;./mbedtls/src/ssl_cookie.o;./mbedtls/src/ssl_srv.o;./mbedtls/src/ssl_ticket.o;./mbedtls/src/ssl_tls.o;./mbedtls/src/version.o;./mbedtls/src/version_features.o;./mbedtls/src/x509.o;./mbedtls/src/x509_create.o;./mbedtls/src/x509_crl.o;./mbedtls/src/x509_crt.o;./mbedtls/src/x509_csr.o;./mbedtls/src/x509write_crt.o;./mbedtls/src/x509write_csr.o;./mbedtls/platform/src/mbed_trng.o;./mbedtls/platform/src/platform_alt.o;./mbedtls/mbed-crypto/src/aes.o;./mbedtls/mbed-crypto/src/aesni.o;./mbedtls/mbed-crypto/src/arc4.o;./mbedtls/mbed-crypto/src/aria.o;./mbedtls/mbed-crypto/src/asn1parse.o;./mbedtls/mbed-crypto/src/asn1write.o;./mbedtls/mbed-crypto/src/base64.o;./mbedtls/mbed-crypto/src/bignum.o;./mbedtls/mbed-crypto/src/blowfish.o;./mbedtls/mbed-crypto/src/camellia.o;./mbedtls/mbed-crypto/src/ccm.o;./mbedtls/mbed-crypto/src/chacha20.o;./mbedtls/mbed-crypto/src/chachapoly.o;./mbedtls/mbed-crypto/src/cipher.o;./mbedtls/mbed-crypto/src/cipher_wrap.o;./mbedtls/mbed-crypto/src/cmac.o;./mbedtls/mbed-crypto/src/ctr_drbg.o;./mbedtls/mbed-crypto/src/des.o;./mbedtls/mbed-crypto/src/dhm.o;./mbedtls/mbed-crypto/src/ecdh.o;./mbedtls/mbed-crypto/src/ecdsa.o;./mbedtls/mbed-crypto/src/ecjpake.o;./mbedtls/mbed-crypto/src/ecp.o;./mbedtls/mbed-crypto/src/ecp_curves.o;./mbedtls/mbed-crypto/src/entropy.o;./mbedtls/mbed-crypto/src/entropy_poll.o;./mbedtls/mbed-crypto/src/gcm.o;./mbedtls/mbed-crypto/src/havege.o;./mbedtls/mbed-crypto/src/hkdf.o;./mbedtls/mbed-crypto/src/hmac_drbg.o;./mbedtls/mbed-crypto/src/md.o;./mbedtls/mbed-crypto/src/md2.o;./mbedtls/mbed-crypto/src/md4.o;./mbedtls/mbed-crypto/src/md5.o;./mbedtls/mbed-crypto/src/md_wrap.o;./mbedtls/mbed-crypto/src/memory_buffer_alloc.o;./mbedtls/mbed-crypto/src/nist_kw.o;./mbedtls/mbed-crypto/src/oid.o;./mbedtls/mbed-crypto/src/padlock.o;./mbedtls/mbed-crypto/src/pem.o;./mbedtls/mbed-crypto/src/pk.o;./mbedtls/mbed-crypto/src/pk_wrap.o;./mbedtls/mbed-crypto/src/pkcs12.o;./mbedtls/mbed-crypto/src/pkcs5.o;./mbedtls/mbed-crypto/src/pkparse.o;./mbedtls/mbed-crypto/src/pkwrite.o;./mbedtls/mbed-crypto/src/platform.o;./mbedtls/mbed-crypto/src/platform_util.o;./mbedtls/mbed-crypto/src/poly1305.o;./mbedtls/mbed-crypto/src/ripemd160.o;./mbedtls/mbed-crypto/src/rsa.o;./mbedtls/mbed-crypto/src/rsa_internal.o;./mbedtls/mbed-crypto/src/sha1.o;./mbedtls/mbed-crypto/src/sha256.o;./mbedtls/mbed-crypto/src/sha512.o;./mbedtls/mbed-crypto/src/threading.o;./mbedtls/mbed-crypto/src/timing.o;./mbedtls/mbed-crypto/src/xtea.o;./mbedtls/mbed-crypto/platform/COMPONENT_PSA_SRV_IMPL/psa_crypto.o;./mbedtls/mbed-crypto/platform/COMPONENT_PSA_SRV_IMPL/psa_crypto_slot_management.o;./mbedtls/mbed-crypto/platform/COMPONENT_PSA_SRV_IMPL/psa_crypto_storage.o;./mbedtls/mbed-crypto/platform/COMPONENT_PSA_SRV_IMPL/psa_its_file.o;./lorawan/system/LoRaWANTimer.o;./lorawan/lorastack/phy/LoRaPHY.o;./lorawan/lorastack/phy/LoRaPHYAS923.o;./lorawan/lorastack/phy/LoRaPHYAU915.o;./lorawan/lorastack/phy/LoRaPHYCN470.o;./lorawan/lorastack/phy/LoRaPHYCN779.o;./lorawan/lorastack/phy/LoRaPHYEU433.o;./lorawan/lorastack/phy/LoRaPHYEU868.o;./lorawan/lorastack/phy/LoRaPHYIN865.o;./lorawan/lorastack/phy/LoRaPHYKR920.o;./lorawan/lorastack/phy/LoRaPHYUS915.o;./lorawan/lorastack/mac/LoRaMac.o;./lorawan/lorastack/mac/LoRaMacChannelPlan.o;./lorawan/lorastack/mac/LoRaMacCommand.o;./lorawan/lorastack/mac/LoRaMacCrypto.o;./lorawan/LoRaWANInterface.o;./lorawan/LoRaWANStack.o;./lora_rf_drivers/SX126X/SX126X_LoRaRadio.o;./lcd-graphics/bmp.o;./lcd-graphics/display.o;./lcd-graphics/displayls013b7dh03.o;./lcd-graphics/displaypalemlib.o;./lcd-graphics/dmd_display.o;./lcd-graphics/glib.o;./lcd-graphics/glib_bitmap.o;./lcd-graphics/glib_circle.o;./lcd-graphics/glib_font_narrow_6x8.o;./lcd-graphics/glib_font_normal_8x8.o;./lcd-graphics/glib_font_number_16x20.o;./lcd-graphics/glib_line.o;./lcd-graphics/glib_polygon.o;./lcd-graphics/glib_rectangle.o;./lcd-graphics/glib_string.o;./lcd-graphics/graphics.o;./lcd-graphics/udelay.o;./hardware/kit/common/drivers/mx25flash_spi.o;./hardware/kit/common/bsp/bsp_stk.o;./hardware/kit/common/bsp/bsp_stk_leds.o;./events/equeue/equeue.o;./events/equeue/equeue_mbed.o;./events/equeue/equeue_posix.o;./events/EventQueue.o;./events/mbed_shared_queues.o;./emlib/em_ldma.o;./app/bluetooth/common/util/infrastructure.o;./application_properties.o;./ble_main.o;./dmadrv.o;./gatt_db.o;./gpiointerrupt.o;./init_app.o;./init_board.o;./init_mcu.o;./main.o;./pti.o;./spidrv.o;${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libbluetooth.a};${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libpsstore.a};${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/libmbedtls.a};${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32BG12P/GCC/binapploader.o};${workspace_loc:/${ProjName}/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg12_gcc_release.a};-lm" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.953056920" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base.1419521070" name="GNU ARM Archiver" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.archiver.base"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904.1015356034" name="libmbedtls.a" rcbsApplicability="disable" resourcePath="protocol/bluetooth/lib/EFR32BG12P/GCC/libmbedtls.a" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.806645578" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1667659464" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1637397959" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904.318738212" name="em_chip.h" rcbsApplicability="disable" resourcePath="platform/emlib/inc/em_chip.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="platform/emlib/inc/em_chip.h|emlib/em_usart.c|emlib/em_system.c|emlib/em_rtcc.c|emlib/em_gpio.c|emlib/em_emu.c|emlib/em_core.c|emlib/em_cmu.c|emlib/em_assert.c|hardware/kit/common/drivers/udelay.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule generalProj.esf.protocolIds="com.silabs.sdk.stack.super:2.6.0._310455070.com.silabs.stack.ble:2.12.0.0_-674151068" generalProj.esf.protocolNames="ble" moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="62" projectCommon.boardIds="brd4103a:0.0.0.A01" projectCommon.buildArtifactType="EXE" projectCommon.partId="mcu.arm.efr32.bg12.efr32bg12p332f1024gl125" projectCommon.sdkId="com.silabs.sdk.stack.super:2.6.0._310455070" projectCommon.toolchainId="com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="soc-thermometer-rtos.com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType.991438682" name="SLS CDT Project" projectType="com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="GNU ARM v7.2.1 - Default">
+			<resource resourceType="PROJECT" workspacePath="/soc-thermometer-rtos"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904;com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904.;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base.1141764417;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.input.1695470826">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904;com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904.;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base.719490493;com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.input.1510799698">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
