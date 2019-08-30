@@ -21,6 +21,7 @@
 #include  <common/include/rtos_utils.h>
 
 #include <stdlib.h>
+#include "platform/mbed_critical.h"
 #include <stdint.h>
 #include <string.h>
 
@@ -376,7 +377,7 @@ int equeue_post(equeue_t *q, void (*cb)(void *), void *p)
     int id = equeue_enqueue(q, e, tick);
     RTOS_ERR  error;
     OSSemPost(&q->eventsema, OS_OPT_POST_ALL, &error);
-    //APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(error) == RTOS_ERR_NONE), 1);
+    APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(error) == RTOS_ERR_NONE), 1);
     return id;
 }
 
@@ -493,11 +494,9 @@ void equeue_dispatch(equeue_t *q, int ms)
 			ticks = 0;
 		}
         // wait for events
-        //equeue_sema_wait(&q->eventsema, deadline);
         RTOS_ERR  error;
         CPU_TS ts;
         OSSemPend(&q->eventsema, ticks, OS_OPT_PEND_BLOCKING, &ts, &error);
-        //APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(error) == RTOS_ERR_NONE), 1);
 
         // check if we were notified to break out of dispatch
         if (q->break_requested) {

@@ -134,6 +134,9 @@ static  void  RadioTask (void  *p_arg);
 
 static  void  BleTask (void  *p_arg);
 
+#define BLE_TASK_ENABLE 	1
+#define LORA_TASK_ENABLE 	1
+
 /**
  * This event queue is the global event queue for both the
  * application and stack. To conserve memory, the stack is designed to run
@@ -186,10 +189,6 @@ static  void  LoRaTask (void  *p_arg)
 {
 	PP_UNUSED_PARAM(p_arg);                                     /* Prevent compiler warning.                            */
 
-	/* Enable GPIO in CMU */
-	CMU_ClockEnable(cmuClock_HFPER, true);
-	CMU_ClockEnable(cmuClock_GPIO, true);
-
 	SX126X_LoRaRadio radio(MBED_CONF_APP_LORA_SPI_MOSI,
 			MBED_CONF_APP_LORA_SPI_MISO,
 			MBED_CONF_APP_LORA_SPI_SCLK,
@@ -201,9 +200,6 @@ static  void  LoRaTask (void  *p_arg)
 			MBED_CONF_APP_LORA_DEVICE_SELECT,
 			MBED_CONF_APP_LORA_CRYSTAL_SELECT,
 			MBED_CONF_APP_LORA_ANT_SWITCH);
-
-	GPIO_PinModeSet(gpioPortD, 9, gpioModeInput, 0);
-	GPIOINT_CallbackRegister(9, gpioCallback);
 
 	/**
 	 * Constructing Mbed LoRaWANInterface and passing it the radio object from lora_radio_helper.
@@ -468,6 +464,18 @@ void setup_pins_interrupts(void) {
 	// Configuring push buttons PB0 and PB1 on the WSTK to generate interrupt
 	GPIO_ExtIntConfig(BSP_BUTTON0_PORT, BSP_BUTTON0_PIN, BSP_BUTTON0_PIN, true, true, true);
 	GPIO_ExtIntConfig(BSP_BUTTON1_PORT, BSP_BUTTON1_PIN, BSP_BUTTON1_PIN, true, true, true);
+
+	if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000))
+	{
+		DEBUG_BREAK;
+	}
+
+	/* Enable GPIO in CMU */
+	CMU_ClockEnable(cmuClock_HFPER, true);
+	CMU_ClockEnable(cmuClock_GPIO, true);
+
+	GPIO_PinModeSet(gpioPortD, 9, gpioModeInput, 0);
+	GPIOINT_CallbackRegister(9, gpioCallback);
 }
 
 /*
@@ -611,6 +619,7 @@ static  void  MainStartTask (void  *p_arg)
 
 	setup_pins_interrupts();
 
+#if BLE_TASK_ENABLE
 	OSTaskCreate(&App_BleTaskTCB,		                        /* Create the Start Task.                               */
 				"BLE Throughput Task",
 				BleTask,
@@ -627,6 +636,7 @@ static  void  MainStartTask (void  *p_arg)
 
 																/*   Check error code.                                  */
 	APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(err) == RTOS_ERR_NONE), 1);
+#endif
 
 	OSTaskCreate(&LoRaTaskTCB,	                                /* Create the LoRa Task.                               */
 				"LoRa Task",
@@ -644,11 +654,7 @@ static  void  MainStartTask (void  *p_arg)
 																/*   Check error code.                                  */
 	APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(err) == RTOS_ERR_NONE), 1);
 
-	if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000))
-	{
-		DEBUG_BREAK;
-	}
-
+#if LORA_TASK_ENABLE
 	OSTaskCreate(&RadioTaskTCB, 		                         /* Create the Radio Task.                               */
 			"Radio Task",
 			RadioTask,
@@ -664,6 +670,7 @@ static  void  MainStartTask (void  *p_arg)
 			&err);
 																/*   Check error code.                                  */
 	APP_RTOS_ASSERT_DBG((RTOS_ERR_CODE_GET(err) == RTOS_ERR_NONE), 1);
+#endif
 
 	while (DEF_ON) {
 

@@ -23,6 +23,8 @@
 #include <stdbool.h>
 #include <string.h>
 #include "platform/mbed_critical.h"
+#include  <kernel/include/os_trace.h>
+#include  <common/include/rtos_utils.h>
 
 //using namespace mbed;
 
@@ -37,20 +39,32 @@ unsigned equeue_tick()
 }
 
 // Mutex operations
-int equeue_mutex_create(equeue_mutex_t *m)
+int equeue_mutex_create(OS_MUTEX *m)
 {
+	RTOS_ERR  error;
+	OSMutexCreate(m, "Enqueue Mutex", &error);
     return 0;
 }
-void equeue_mutex_destroy(equeue_mutex_t *m) { }
-
-void equeue_mutex_lock(equeue_mutex_t *m)
+void equeue_mutex_destroy(OS_MUTEX *m)
 {
-	//core_util_critical_section_enter();
+	RTOS_ERR  error;
+	OSMutexDel(m,OS_OPT_DEL_ALWAYS,&error);
 }
 
-void equeue_mutex_unlock(equeue_mutex_t *m)
+void equeue_mutex_lock(OS_MUTEX *m)
+{
+	//core_util_critical_section_enter();
+    RTOS_ERR  error;
+    CPU_TS ts;
+    OSMutexPend(m,0, OS_OPT_PEND_BLOCKING, &ts, &error);
+}
+
+void equeue_mutex_unlock(OS_MUTEX *m)
 {
 	//core_util_critical_section_exit();
+    RTOS_ERR  error;
+    CPU_TS ts;
+    OSMutexPost(m, OS_OPT_POST_NONE, &error);
 }
 
 #endif
