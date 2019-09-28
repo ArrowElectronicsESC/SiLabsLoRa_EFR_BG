@@ -15,6 +15,7 @@
  *
  ******************************************************************************/
 
+#include <spidrv.h>
 #include <string.h>
 
 #include "em_device.h"
@@ -23,7 +24,6 @@
 #include "em_usart.h"
 
 #include "dmadrv.h"
-#include "spidrv.h"
 
 /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
 

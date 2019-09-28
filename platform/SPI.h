@@ -18,6 +18,7 @@
 #define MBED_SPI_H
 
 
+#include <spidrv.h>
 #include "em_gpio.h"
 #include "em_device.h"
 #include "em_chip.h"
@@ -26,7 +27,6 @@
 #include "em_leuart.h"
 #include "em_ldma.h"
 #include "bspconfig.h"
-#include "spidrv.h"
 
 
 namespace mbed {

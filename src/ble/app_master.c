@@ -15,8 +15,8 @@
 #define CONN_INTERVAL_1MPHY_MIN     40		    // 40 * 1.25ms = 50ms
 #define SLAVE_LATENCY_1MPHY         0			    // How many connection intervals can the slave skip if no data is to be sent
 #define SUPERVISION_TIMEOUT_1MPHY   100       // 100 * 10ms = 1000ms
-#define CONN_INTERVAL_2MPHY_MAX     20		    // 20 * 1.25ms = 25ms
-#define CONN_INTERVAL_2MPHY_MIN     20		    // 20 * 1.25ms = 25ms
+#define CONN_INTERVAL_2MPHY_MAX     40		    // 20 * 1.25ms = 25ms
+#define CONN_INTERVAL_2MPHY_MIN     40		    // 20 * 1.25ms = 25ms
 #define SLAVE_LATENCY_2MPHY         0			    // How many connection intervals can the slave skip if no data is to be sent
 #define SUPERVISION_TIMEOUT_2MPHY   100       // 100 * 10ms = 1000ms
 #define CONN_INTERVAL_125KPHY_MAX   160       // 160 * 1.25ms = 200ms

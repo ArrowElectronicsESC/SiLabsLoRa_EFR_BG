@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 #include <stdbool.h>
-
+#include  <kernel/include/os.h>
 // Currently supported platforms
 //
 // Uncomment to select a supported platform or reimplement this file
@@ -91,10 +91,10 @@ typedef UBaseType_t equeue_mutex_t;
 //
 // The equeue_mutex_lock and equeue_mutex_unlock lock and unlock the
 // underlying mutex.
-int equeue_mutex_create(equeue_mutex_t *mutex);
-void equeue_mutex_destroy(equeue_mutex_t *mutex);
-void equeue_mutex_lock(equeue_mutex_t *mutex);
-void equeue_mutex_unlock(equeue_mutex_t *mutex);
+int equeue_mutex_create(OS_MUTEX *mutex);
+void equeue_mutex_destroy(OS_MUTEX *mutex);
+void equeue_mutex_lock(OS_MUTEX *mutex);
+void equeue_mutex_unlock(OS_MUTEX *mutex);
 
 
 // Platform semaphore type

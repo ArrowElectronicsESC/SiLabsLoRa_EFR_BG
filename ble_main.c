@@ -262,7 +262,6 @@ enum bg_thermometer_temperature_measurement_flag{
  */
 
 void     App_BleTaskFunction      (void *p_arg);
-static  void     idleHook(void);
 #ifdef OTA
 static uint8_t boot_to_dfu = 0;
 #endif
@@ -366,18 +365,4 @@ void BluetoothEventHandler(struct gecko_cmd_packet* evt)
       break;
 #endif
   }
-}
-/***************************************************************************//**
- * @brief
- *   This is the idle hook.
- *
- * @detail
- *   This will be called by the Micrium OS idle task when there is no other
- *   task ready to run. We just enter the lowest possible energy mode.
- ******************************************************************************/
-void SleepAndSyncProtimer();
-static void idleHook(void)
-{
-  /* Put MCU in the lowest sleep mode available, usually EM2 */
-  SleepAndSyncProtimer();
 }
