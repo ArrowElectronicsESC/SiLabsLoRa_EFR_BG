@@ -96,10 +96,10 @@ volatile uint32_t msTicks = 0;
 static OS_SEM    App_SemRadio;
 
 // Max payload size can be LORAMAC_PHY_MAXPAYLOAD.
-// This example only communicates with much shorter messages (<30 bytes).
+// This example only communicates with much shorter messages (<256 bytes).
 // If longer messages are used, these buffers must be changed accordingly.
-uint8_t tx_buffer[30];
-uint8_t rx_buffer[30];
+uint8_t tx_buffer[256];
+uint8_t rx_buffer[256];
 
 /*
  ********************************************************************************************************
